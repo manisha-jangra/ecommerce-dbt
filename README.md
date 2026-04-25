@@ -44,6 +44,23 @@ source .venv/Scripts/activate
 .venv\Scripts\activate
 ```
 
+**Copy environment file:**
+
+```bash
+cp .env.example .env
+```
+**Add your credentials inside .env:**
+```bash
+DBT_HOST=localhost
+DBT_PORT=5433
+DBT_USER=postgres
+DBT_PASSWORD=your_password
+DBT_DBNAME=ecommerce
+DBT_SCHEMA=public
+```
+
+
+
 ---
 
 #  3. Install Dependencies
@@ -62,7 +79,7 @@ dbt deps
 
 ---
 
-##  Lock Dependencies (Best Practice)
+##  Lock Dependencies 
 
 Freeze dependencies for reproducibility:
 
