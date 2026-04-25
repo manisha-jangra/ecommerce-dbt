@@ -1,4 +1,4 @@
-#  Ecommerce dbt
+#  Ecommerce dbt Project
 
 A simple end-to-end **dbt (Data Build Tool)** project demonstrating how to transform raw data into analytics-ready models using staging and marts layers.
 
