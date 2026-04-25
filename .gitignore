@@ -1,0 +1,10 @@
+.venv
+logs
+.env
+
+ecommerce_project/dbt_project.yml
+ecommerce_project/models/
+ecommerce_project/packages.yml
+ecommerce_project/package-lock.yml
+ecommerce_project/README.md
+requirements.txt
