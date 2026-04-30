@@ -1,10 +1,10 @@
-#  Ecommerce dbt Project
+# Ecommerce dbt Project
 
 A simple end-to-end **dbt (Data Build Tool)** project demonstrating how to transform raw data into analytics-ready models using staging and marts layers.
 
 ---
 
-#  1. Prerequisites
+# 1. Prerequisites
 
 Before starting, ensure you have:
 
@@ -15,7 +15,7 @@ Before starting, ensure you have:
 
 ---
 
-#  2. Project Setup
+# 2. Project Setup
 
 ### Clone or create project folder
 
@@ -49,7 +49,9 @@ source .venv/Scripts/activate
 ```bash
 cp .env.example .env
 ```
+
 **Add your credentials inside .env:**
+
 ```bash
 DBT_HOST=localhost
 DBT_PORT=5433
@@ -59,11 +61,15 @@ DBT_DBNAME=ecommerce
 DBT_SCHEMA=public
 ```
 
+### Load environment variables (Git Bash)
 
+```bash
+export $(grep -v '^#' .env | xargs)
+```
 
 ---
 
-#  3. Install Dependencies
+# 3. Install Dependencies
 
 ### Install dbt (PostgreSQL adapter)
 
@@ -79,7 +85,7 @@ dbt deps
 
 ---
 
-##  Lock Dependencies 
+## Lock Dependencies
 
 Freeze dependencies for reproducibility:
 
@@ -95,7 +101,7 @@ pip install -r requirements.txt
 
 ---
 
-#  4. Configure dbt Profile
+# 4. Configure dbt Profile
 
 Update your profile file:
 
@@ -122,7 +128,7 @@ ecommerce_project:
 
 ---
 
-#  5. Verify Setup
+# 5. Verify Setup
 
 ```bash
 dbt debug
@@ -132,7 +138,7 @@ dbt debug
 
 ---
 
-#  6. Run dbt Models
+# 6. Run dbt Models
 
 ### Run all models
 
@@ -154,7 +160,7 @@ dbt run -s +model_name
 
 ---
 
-#  7. Run Tests
+# 7. Run Tests
 
 ```bash
 dbt test
@@ -168,7 +174,7 @@ Tests included:
 
 ---
 
-#  8. Generate Documentation
+# 8. Generate Documentation
 
 ```bash
 dbt docs generate
@@ -183,7 +189,7 @@ http://localhost:8080
 
 ---
 
-#  9. Clean Project
+# 9. Clean Project
 
 Remove compiled files:
 
@@ -193,7 +199,7 @@ dbt clean
 
 ---
 
-#  10. Full Refresh (Rebuild Models)
+# 10. Full Refresh (Rebuild Models)
 
 ```bash
 dbt run --full-refresh
@@ -201,7 +207,7 @@ dbt run --full-refresh
 
 ---
 
-#  Project Structure
+# Project Structure
 
 ```
 models/
@@ -217,7 +223,7 @@ models/
 
 ---
 
-#  Architecture Overview
+# Architecture Overview
 
 ```
 Raw Tables (PostgreSQL)
@@ -231,7 +237,7 @@ marts (business logic)
 
 ---
 
-#  Common Commands Cheat Sheet
+# Common Commands Cheat Sheet
 
 | Task             | Command             |
 | ---------------- | ------------------- |
@@ -244,7 +250,7 @@ marts (business logic)
 
 ---
 
-#  Summary
+# Summary
 
 This project demonstrates:
 
