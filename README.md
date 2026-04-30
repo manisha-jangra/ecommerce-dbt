@@ -250,6 +250,19 @@ marts (business logic)
 
 ---
 
+# Quick Start (Run Project in One Go)
+
+```bash
+cd /c/Users/Manisha/dbt_projects/ecommercev2_dbt
+source .venv/Scripts/activate
+export $(grep -v '^#' .env | xargs)
+cd ecommerce_project
+
+dbt run
+```
+
+---
+
 # Summary
 
 This project demonstrates:
