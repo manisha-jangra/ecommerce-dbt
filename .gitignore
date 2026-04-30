@@ -1,10 +1,98 @@
-.venv
-logs
+# =========================
+
+# 🐍 Python
+
+# =========================
+
+**pycache**/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Virtual environments
+
+.venv/
+venv/
+env/
+.dbt-env/
+
+# =========================
+
+# 📦 dbt
+
+# =========================
+
+# dbt packages + compiled artifacts
+
+dbt_packages/
+target/
+logs/
+dbt_modules/
+
+# profiles.yml contains credentials → NEVER commit
+
+profiles.yml
+
+# =========================
+
+# 🐘 PostgreSQL / Data
+
+# =========================
+
+*.csv
+*.parquet
+*.db
+*.sqlite
+
+# Dump files
+
+*.sql.gz
+*.dump
+
+# =========================
+
+# 🐳 Docker
+
+# =========================
+
+*.env
 .env
 
-ecommerce_project/dbt_project.yml
-ecommerce_project/models/
-ecommerce_project/packages.yml
-ecommerce_project/package-lock.yml
-ecommerce_project/README.md
-requirements.txt
+# =========================
+
+# 💻 OS / System files
+
+# =========================
+
+.DS_Store
+Thumbs.db
+
+# =========================
+
+# 🧠 IDEs / Editors
+
+# =========================
+
+.vscode/
+.idea/
+*.swp
+
+# =========================
+
+# 📊 Logs
+
+# =========================
+
+*.log
+
+# =========================
+
+# 🔐 Secrets / Keys
+
+# =========================
+
+*.pem
+*.key
+*.crt
+

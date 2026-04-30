@@ -49,3 +49,7 @@ dist/
 
 # 📓 Jupyter (if used)
 .ipynb_checkpoints/
+
+packages.yml
+package-lock.yml
+README.md
