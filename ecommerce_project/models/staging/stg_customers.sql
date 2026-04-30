@@ -5,3 +5,4 @@ select
     email,
     created_at
 from {{ source('ecommerce', 'customers') }}
+where first_name is not null
